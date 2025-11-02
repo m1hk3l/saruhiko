@@ -1,3 +1,38 @@
-baseURL: https://example.org/
+baseURL: https://sarhuhiko.org/
 languageCode: en-us
-title: My New Hugo Site
+title: Saruhiko Tech
+theme: Eclectic
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about
+      weight: 100
+    - identifier: contact
+      name: Contact
+      url: /contact
+      weight: 200
+params:
+  author:
+    facebook: "https://facebook.com/example"
+    twitter: "https://twitter.com/example"
+    email: "contact@example.org"
+    name: "Acme Corporation"
+    location: "New York"
+    phone: "(999) 999-9999"
+    hours: "**Mon-Fri:** 9:00AM – 6:00PM, ET"
+  color: "#4f46e5"
+  copyright: "Copyright &copy; 2022 Acme Corporation.
+    All Rights Reserved."
+  footer:
+    - title: About
+      content: >
+        This is a test site  
+        Learning Hugo
+
+
+    - title: Recent Blog Posts
+      recents: blog
+      recentCount: 7
+    - title: Contact Us
+      contact: true
