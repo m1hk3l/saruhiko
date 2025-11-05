@@ -405,11 +405,11 @@ new Search();
   ///////////////////////////////////////////
   // Service Worker
   ///////////////////////////////////////////
-  /*{{ if not hugo.IsServer  }}*/
+  {{ if not hugo.IsServer -}}
   if ('serviceWorker' in navigator && window.location.pathname !== '/offline') {
     navigator.serviceWorker.register('/sw.min.js', { scope: '/' });
   }
-  /*{{ end }}*/
+  {{- end }}
 
   ////////////////////////////////////////////////////////
   // Link Pre-fetching to improve perceptible load times.
